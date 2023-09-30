@@ -2,6 +2,9 @@ body {
   margin: 0px;
   padding: auto;
   background-color: black;
+  background-image: url("asset/grafis.png");
+  background-size: 1000px; /* Untuk mengatur ukuran gambar agar selalu mengisi elemen latar belakang */
+  background-repeat: no-repeat; /* Untuk menghindari pengulangan gambar */
 }
 
 ul {
@@ -17,8 +20,8 @@ nav {
   justify-content: space-between;
   align-items: center;
   height: 60px;
-  /* background-color: yellow;
-  box-shadow: 2px 2px 12px #eeff00; */
+  background-color: black;
+  box-shadow: 2px 2px 12px #03f3f7;
   padding: 0px 5%;
 }
 
@@ -27,6 +30,109 @@ nav ul {
 }
 
 nav ul li a {
-  margin: 10px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #03f3f7;
+}
+
+nav ul li a:hover {
+  /* background-color: #03f3f7;
+  border-radius: 12px;*/
+  padding: 5px;
+  color: #ffff;
+}
+
+.logo {
+  font-family: lucida handwriting;
+  font-size: 20px;
+  color: #03f3f7;
+  display: flex;
+  font-weight: bold;
+}
+
+.logo:hover {
+  /* background-color: #03f3f7; */
+  color: #ffff;
+  /* border-radius: 18px;
+  padding: 8px; */
+}
+/* parent */
+.home p {
+  line-height: 0px;
+  margin: 55px 0px 25px;
+}
+
+.home p:nth-child(1) {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #ffff;
+  font-size: 20px;
+}
+.home p:nth-child(2) {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #ffff;
+  font-size: 40px;
+  letter-spacing: none;
+}
+.home p:nth-child(3) {
+  font-family: sans-serif;
+  font-weight: small;
+  color: #ffff;
+  font-size: 20px;
+  letter-spacing: none;
+  font-style: italic;
+}
+.home p:nth-child(4) {
+  font-family: sans-serif;
+  font-weight: small;
+  color: #ffff;
+  font-size: 20px;
+  letter-spacing: none;
+  font-style: italic;
+}
+
+span {
+  color: #ffbf8b;
+}
+
+.home {
+  position: absolute;
+  top: 28%;
+  left: 10%;
+  right: 10%;
+  transform: translate (13%, 42%);
+}
+
+.images .picture {
+  height: auto;
+  width: 400px;
+  position: absolute;
+  left: 75%;
+  top: 20%;
+  transform: translateX(-40%);
+  bottom: 0;
+  transition: bottom 1s, left 1s;
+}
+
+.images .bgpicture {
+  height: auto;
+  max-width: 100;
+  position: absolute;
+  left: 75%;
+  top: 20%;
+  transform: translateX(-40%);
+  bottom: 0;
+  transition: top 1s, left 1s;
+}
+
+.images:hover .bgpicture {
+  bottom: 40px;
+  top: 23%;
+}
+
+.images:hover .picture {
+  left: 73%;
 }
