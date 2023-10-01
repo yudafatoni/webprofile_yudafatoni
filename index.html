@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Portofolio Yuda</title>
+  </head>
+  <body>
+    <section id="home">
+      <div class="navbar">
+        <nav>
+          <a href="portofolioYuda.html" class="logo">Yuda Fatoni</a>
+          <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skill">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="home">
+        <p>Web Developer</p>
+        <p>Hi, I'm <span>Yuda Fatoni</span></p>
+        <p>"Welcome to my web developer portfolio! I'm thrilled to have you here.</p> 
+          <p>This is the space where I showcase my journey for web development."</p>
+      
+        <a href="download-link" id="download-link">
+          <button type="button" id="download-button">Download CV</button>
+            <script>
+              // JavaScript untuk mengatur tindakan unduhan saat tombol di klik
+              const downloadButton = document.getElementById('download-button');
+              const downloadLink = document.getElementById('download-link');
+              const cvFileUrl = 'cv/CV_Yuda Fatoni.pdf'; // Ganti dengan URL file CV Anda
+        
+              downloadButton.addEventListener('click', function() {
+                // Mengubah lokasi URL link unduhan
+                downloadLink.href = cvFileUrl;
+        
+                // Memulai unduhan
+                downloadLink.click();
+              });
+            </script>
+        </a>
+      </div>
+      
+
+      <div class="images">
+        <img class="bgpicture" src="asset/Vector.png" alt="bgpicture" />
+        <img class="picture" src="asset/yudaimage.png" alt="picture" />
+      </div>
+    </section>
+  
+    <section>
+    <div class="about">
+    <section id="about">
+      <div class="about">
+        <div class="deskripsi">
+          <p>About</p>
+          <div class="row">
+            <div class="column" style="background-color: rgb(0, 0, 0)">
+              <h2>:)</h2>
+              <p> Saya adalah seorang pengembang web dengan minat khusus dalam menciptakan pengalaman digital yang menakjubkan. Saya telah berkecimpung dalam dunia pengembangan web selama beberapa tahun dan selalu terinspirasi oleh berbagai teknologi baru yang muncul setiap hari. Pekerjaan saya meliputi desain responsif, pengembangan frontend dan backend, serta integrasi API untuk menciptakan situs web yang dinamis dan interaktif. 
+                Selain itu, saya juga memiliki latar belakang dalam manajemen proyek, yang memungkinkan saya untuk mengelola proyek dengan efisien dan mengantarkan mereka tepat waktu. Saya juga sangat mendukung pemikiran kreatif dan berpikir di luar kotak untuk menemukan solusi yang inovatif.
+                <br>
+                <p></p>Melalui portofolio ini, Saya selalu senang untuk menerima masukan dan tanggapan dari pengguna, jadi jangan ragu untuk menghubungi saya melalui fitur "Contact me" jika Anda ingin berbicara lebih lanjut atau memiliki pertanyaan.
+                <p>Terima kasih telah mengunjungi situs web portofolio saya. Saya berharap Anda menikmati melihat-lihat pekerjaan saya dan semoga kita dapat berkolaborasi di masa depan!</p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skill">
+      <div class="skill">
+        <div class="skill-deskripsi">
+          <p>skills</p>
+          <p>Berikut adalah berapa keterampilan dan pengalaman yang telah saya dapatkan dalam bidang pengembangan web, manajemen proyek, dan desain web. Semoga ini memberikan wawasan yang lebih baik tentang apa yang dapat saya tawarkan dalam proyek-proyek masa depan.</p>
+        </div>
+      
+
+        <div class="box-container">
+          <div class="box-1">
+            <span>1</span>
+              <p>Web Development</p>
+              <p>Mempelajari HTML, CSS, JavaScript yang merupakan Kemampuan dalam membangun dan merancang tampilan web yang responsif dan menarik.
+                Framework Frontend: Pengalaman dengan framework frontend seperti Bootstrap.
+                Backend Development: mempelajari penggunaan sql dalam database.</div>
+
+          <div class="box-2">
+            <span>2</span>
+            <p>Project Management</p>
+            <p>Kemampuan merencanakan proyek, menetapkan tujuan, dan mengelola sumber daya juga mengatur jadwal proyek dengan mengidentifikasi prioritas.
+            Menguasai Keterampilan dalam berkomunikasi dan bekerja sama dengan anggota tim dan pemangku kepentingan. Selain itu melacak kemajuan proyek, mengidentifikasi masalah, dan memberikan laporan status.</div>
+
+          <div class="box-3">
+            <span>3</span>
+            <p>Web Design</p>
+            <p>Desain Responsif: Memastikan tampilan web berfungsi dengan baik di berbagai perangkat dan layar.
+              User Interface (UI) Design: Kemampuan merancang antarmuka pengguna yang estetis dan mudah digunakan.
+              User Experience (UX) Design: Memahami kebutuhan pengguna dan menciptakan pengalaman pengguna yang memuaskan.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact -->
+    <section id="contact">
+      <div class="contact">
+        <div class="contact-deskripsi">
+          <p>Contact Me</p>
+          <p>Salam! Saya senang Anda sampai di bagian ini dari portofolio saya. Di sini, saya ingin memberikan kesempatan bagi Anda untuk berinteraksi langsung dengan saya.
+            Jika Anda memiliki pertanyaan lebih lanjut tentang proyek-proyek yang telah saya selesaikan atau jika Anda ingin memulai proyek baru bersama saya, jangan ragu untuk menggunakan fitur "Contact Me" di bawah ini dan melanjutkan lewat social media. </div>
+            
+        <form action="form.html">
+              <input type="text" name="name" Placeholder="Your name" required>
+              <input type="email" name="email" Placeholder="Your email" required>
+              <textarea name="Message" rows="6" placeholder="your Message"></textarea>
+              <button type="submit">Send</button>
+            </form>
+         
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <section id="footer">
+        <footer>
+          <p style="font-size: large; font-weight: bold; color: black;">Let's Connect</p>
+          <div class="social-icons">
+            <div class="social-icons">
+              <a href="https://www.instagram.com/yudaaft"><img src="asset/instagram.png" alt="Instagram"></a>
+              <a href="https://github.com/yudafatoni"><img src="asset/github.png" alt="github"></a>
+              <a href="https://www.linkedin.com/in/yudafatoni"><img src="asset/linkedin.png" alt="linkedin"></a>
+            </div>
+        </footer>
+    </section>
+
+
+     <!-- <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            
+            
+  </body>
+</html>
