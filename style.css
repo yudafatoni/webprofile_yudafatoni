@@ -45,12 +45,15 @@ nav ul li a:hover {
   border-radius: 12px;*/
   padding: 5px;
   color: #ffd9bc;
+  background-color: #000000;
+  padding: 3px;
+  box-shadow: 2px 3px 5px #03f3f7;
+  border-radius: 5px;
 }
 
 .navbar a.active {
   color: #ffd9bc;
   border-radius: 5px;
-  background-color: #000000;
   padding: 3px;
   box-shadow: 2px 3px 5px #03f3f7;
 }
@@ -95,7 +98,7 @@ nav ul li a:hover {
   letter-spacing: none;
 }
 .home p:nth-child(3) {
-  font-family: sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: small;
   color: #ffff;
   font-size: 20px;
@@ -103,7 +106,7 @@ nav ul li a:hover {
   font-style: italic;
 }
 .home p:nth-child(4) {
-  font-family: sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: small;
   color: #ffff;
   font-size: 20px;
@@ -112,7 +115,7 @@ nav ul li a:hover {
 }
 
 span {
-  color: #ffd9bc;
+  color: #03f3f7;
 }
 
 .home {
@@ -124,6 +127,24 @@ span {
   margin-top: 50px;
 }
 
+.home button {
+  background-color: #03f3f7;
+  box-shadow: 4px 4px 13px #03f3f7;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+  float: left;
+  margin-top: 5%;
+  width: auto;
+  height: auto;
+}
+
+.home button:hover {
+  transform: scale(1.2);
+}
 .images .picture {
   height: auto;
   width: 400px;
@@ -159,20 +180,25 @@ span {
   width: 100%;
   height: 95vh;
   position: relative;
+  padding: 5px;
 }
 
 .about {
   height: 55vh;
   background-color: black;
   padding: 2% 10% 10%;
+  text-align: justify;
+  font-size: 18px;
+  margin: 0px 5px;
 }
 
 .deskripsi {
   margin: 50px 50px;
+  padding: auto;
 }
 
 .deskripsi p:nth-child(1) {
-  font-family: sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   color: #03f3f7;
   font-size: 30px;
@@ -187,6 +213,8 @@ span {
   align-items: center;
   box-shadow: 2px 12px 18px #03f3f7;
   color: #ffff;
+  font-size: 20px;
+  padding: 20px;
 }
 
 /* skills */
@@ -207,7 +235,7 @@ span {
 }
 
 .skill-deskripsi p:nth-child(1) {
-  font-family: sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   color: #03f3f7;
   font-size: 30px;
@@ -216,7 +244,7 @@ span {
   margin-bottom: 35px;
 }
 .skill-deskripsi p:nth-child(2) {
-  font-family: sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   color: #03f3f7;
   text-align: center;
 }
@@ -265,7 +293,7 @@ span {
 }
 
 .contact {
-  height: 55vh;
+  height: 70vh;
   background-color: #000000;
   padding: 2% 10% 10%;
   box-shadow: 2px 12px 18px #03f3f7;
@@ -279,11 +307,60 @@ span {
 }
 
 .contact-deskripsi p:nth-child(1) {
-  font-family: sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   color: #03f3f7;
   font-size: 30px;
   line-height: 0px;
   text-align: center;
   margin-bottom: 35px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px #03f3f7;
+  border-radius: 2px;
+  box-shadow: #03f3f7;
+  box-sizing: border-box;
+  margin-top: 8px;
+  margin-bottom: 15px;
+}
+
+button {
+  background-color: #03f3f7;
+  border: none;
+  box-shadow: 4px 4px 13px #03f3f7;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: bold;
+  float: right;
+}
+
+button:active {
+  transform: scale(1.1);
+}
+button:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  height: 150px;
+  width: 100%;
+  display: flex;
+  background-color: #03f3f7;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0px 10px 20px 10px #03f3f7;
+}
+
+.social-icons a img {
+  width: 30px;
+  height: 30px;
+  padding: 15px;
 }
