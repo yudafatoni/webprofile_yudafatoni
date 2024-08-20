@@ -22,39 +22,41 @@
         </nav>
       </div>
 
-      <div class="home">
-        <p>Web Developer</p>
-        <p>Hi, I'm <span>Yuda Fatoni</span></p>
-        <p>"Welcome to my web developer portfolio! I'm thrilled to have you here.</p> 
-          <p>This is the space where I showcase my journey for web development."</p>
-      
-        <a href="download-link" id="download-link">
-          <button type="button" id="download-button">Download CV</button>
-            <script>
-              // JavaScript untuk mengatur tindakan unduhan saat tombol di klik
-              const downloadButton = document.getElementById('download-button');
-              const downloadLink = document.getElementById('download-link');
-              const cvFileUrl = 'cv/CV_Yuda Fatoni.pdf'; // Ganti dengan URL file CV Anda
+      <div class="container">
+        <div class="home">
+          <p>Web Developer</p>
+          <p>Hi, I'm <span>Yuda Fatoni</span></p>
+          <p>"Welcome to my web developer portfolio! I'm thrilled to have you here.</p> 
+            <p>This is the space where I showcase my journey for web development."</p>
         
-              downloadButton.addEventListener('click', function() {
-                // Mengubah lokasi URL link unduhan
-                downloadLink.href = cvFileUrl;
-        
-                // Memulai unduhan
-                downloadLink.click();
-              });
-            </script>
-        </a>
-      </div>
-      
+          <a href="download-link" id="download-link">
+            <button type="button" id="download-button">Download CV</button>
+              <script>
+                // JavaScript untuk mengatur tindakan unduhan saat tombol di klik
+                const downloadButton = document.getElementById('download-button');
+                const downloadLink = document.getElementById('download-link');
+                const cvFileUrl = 'cv/CV_Yuda Fatoni.pdf'; // Ganti dengan URL file CV Anda
+          
+                downloadButton.addEventListener('click', function() {
+                  // Mengubah lokasi URL link unduhan
+                  downloadLink.href = cvFileUrl;
+          
+                  // Memulai unduhan
+                  downloadLink.click();
+                });
+              </script>
+          </a>
+        </div>
 
-      <div class="images">
-        <img class="bgpicture" src="asset/Vector.png" alt="bgpicture" />
-        <img class="picture" src="asset/yudaimage.png" alt="picture" />
+        <div class="images">
+          <img class="bgpicture" src="asset/Vector.png" alt="responsive-bgpicture" />
+          <img class="picture" src="asset/yudaimage.png" alt="responsive-picture" />
+        </div>
       </div>
     </section>
   
-    <section>
+  
+   
     <div class="about">
     <section id="about">
       <div class="about">
@@ -72,12 +74,12 @@
           </div>
         </div>
       </div>
-    </section>
+    
 
     <section id="skill">
       <div class="skill">
         <div class="skill-deskripsi">
-          <p>skills</p>
+          <p>Skills</p>
           <p>Berikut adalah berapa keterampilan dan pengalaman yang telah saya dapatkan dalam bidang pengembangan web, manajemen proyek, dan desain web. Semoga ini memberikan wawasan yang lebih baik tentang apa yang dapat saya tawarkan dalam proyek-proyek masa depan.</p>
         </div>
       
@@ -111,7 +113,7 @@
       <div class="contact">
         <div class="contact-deskripsi">
           <p>Contact Me</p>
-          <p>Salam! Saya senang Anda sampai di bagian ini dari portofolio saya. Di sini, saya ingin memberikan kesempatan bagi Anda untuk berinteraksi langsung dengan saya.
+          <p>Saya senang Anda sampai di bagian ini dari portofolio saya. Di sini, saya ingin memberikan kesempatan bagi Anda untuk berinteraksi langsung dengan saya.
             Jika Anda memiliki pertanyaan lebih lanjut tentang proyek-proyek yang telah saya selesaikan atau jika Anda ingin memulai proyek baru bersama saya, jangan ragu untuk menggunakan fitur "Contact Me" di bawah ini dan melanjutkan lewat social media. </div>
             
         <form action="form.html">
